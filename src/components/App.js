@@ -1,13 +1,13 @@
 import {Component} from 'react';
 import {Route, Switch} from 'react-router';
 
-import HomePage from '../pages/HomePage';
+import PhoneBook from '../pages/PhoneBook';
 
 class App extends Component {
     render() {
         return (
             <Switch>
-                <Route exact path="/" component={HomePage}/>
+                <Route exact path="/" component={PhoneBook}/>
             </Switch>
         );
     }

@@ -7,6 +7,7 @@ import thunk from 'redux-thunk';
 import Project from './reducers';
 import App from './components/App';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import './styles/phone-book.scss';
 
 const store = createStore(Project, composeWithDevTools(applyMiddleware(thunk)));
 

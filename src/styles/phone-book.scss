@@ -1,0 +1,61 @@
+.phone-book {
+  padding: 12px 10%;
+
+  .header {
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: center;
+
+    > div {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    .title {
+      justify-content: center;
+
+      h2 {
+        margin: 20px 8px;
+      }
+    }
+  }
+
+  .action-controls {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      width: 40%;
+    }
+  }
+
+  .no-contacts {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    font-weight: 600;
+  }
+
+  .table>tbody>tr>td {
+    word-break: break-all
+  }
+
+  .pagination-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      margin-left: 8px;
+    }
+  }
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
