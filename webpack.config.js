@@ -36,7 +36,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract({
+                use: ExtractTextPlugin.extract({
                     use: 'styles-loader',
                 }),
             },
@@ -48,7 +48,12 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loaders: ['style-loader', 'styles-loader', 'sass-loader']
+                use: ExtractTextPlugin.extract({
+                    use: [
+                        { loader: 'css-loader' },
+                        { loader: 'sass-loader' }
+                    ]
+                })
             }
         ]
     },
